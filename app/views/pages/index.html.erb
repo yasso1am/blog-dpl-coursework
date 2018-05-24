@@ -1,0 +1,10 @@
+<html>
+<p>
+  <%= link_to 'New Page', new_page_path %>
+</p>
+<h1> Pages </h1>
+<% @pages.each do |page| %>
+  <h2><%= page.title %></h2>
+  <%= link_to 'Show', page_path(page) %>
+  <% end %>
+</html>
